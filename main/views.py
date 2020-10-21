@@ -32,7 +32,7 @@ class JobLossMentionListCreate(generics.ListCreateAPIView):
 
 
 	# Allow search functionality
-	search_fields = ['date', 'country', 'publication_name']
+	search_fields = ['date_accessed', 'country', 'publication_name', 'publication_date']
 	filter_backends = (filters.SearchFilter,)
 
 	# Setting the filter options

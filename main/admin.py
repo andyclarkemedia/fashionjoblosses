@@ -57,9 +57,9 @@ class CountryDisplay(admin.ModelAdmin):
 
 class JobLossMentionDisplay(admin.ModelAdmin):
 
-	list_display = ('date', 'article_headline', 'publication_name', 'extracted_text', 'numbers_mentioned', 'entities_mentioned', 'article_url')
+	list_display = ('article_headline', 'publication_date', 'publication_name', 'extracted_text', 'numbers_mentioned', 'entities_mentioned', 'dates_mentioned', 'article_url', 'date_accessed')
 
-	list_filter = ('country', 'date')
+	list_filter = ('country', 'date_accessed')
 
 
 # ==========

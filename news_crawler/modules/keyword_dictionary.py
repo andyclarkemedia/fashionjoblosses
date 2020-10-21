@@ -7,6 +7,6 @@
 job_loss_keyword_dictionary = {
 	
 
-	"English": ['redundancies', 'redundancy', ' cuts ', ' cut ', 'job cuts', 'lose their jobs', 'job losses', 'fired', "job cuts"]
+	"English": ['redundancies', 'redundancy', ' cuts ', ' cut ', 'job cuts', 'lose their jobs', 'job losses', 'fired', "job cuts", "risk", "Huawei", "governments"]
 
 }

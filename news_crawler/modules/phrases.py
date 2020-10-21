@@ -50,7 +50,7 @@ def phraseify(article_p_list, publication_name, language, country, article_url, 
 			phrase_dictionary = {
 				"publication_name": publication_name,
 				"article_headline": str(headline)[1:-1],
-				"publication_date": publication_date,
+				"publication_date": str(publication_date)[1:-1],
 				"url": article_url,
 				"language": language,
 				"country": country,

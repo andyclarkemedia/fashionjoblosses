@@ -29,8 +29,11 @@ def identify_keywords_entities_numbers(dictionary):
     # Define an empty entities list
     entities_mentioned = []
 
-    # Define an empty entities list
+    # Define an empty numbers list
     numbers_mentioned = []
+
+    # Define an empty dates list
+    dates_mentioned = []
 
     # =============
     #  IDENTIFY KEYWORDS
@@ -69,17 +72,29 @@ def identify_keywords_entities_numbers(dictionary):
 
 
     # =============
+    #  IDENTIFY PHRASE INNER DATES
+    # =============
+
+    for ent in doc.ents:
+        if str(ent.label_) == "DATE":
+            dates_mentioned.append(str(ent))
+
+
+    # =============
     #  ADD RESULTS TO ORIGINAL DICTIONARY AND RETURN
     # =============
     
     # Add the flattened keyword_matches list to a new key in the dictionary
-    dictionary['keywords'] = keyword_matches
+    dictionary['keywords'] = list(dict.fromkeys(keyword_matches))
 
     # Add the flattened entities_mentioned list to a new key in the dictionary
     dictionary['entities_mentioned'] = list(dict.fromkeys(entities_mentioned))
 
     # Add the flattened numbers_mentioned list to a new key in the dictionary
-    dictionary['numbers_mentioned'] = numbers_mentioned
+    dictionary['numbers_mentioned'] = list(dict.fromkeys(numbers_mentioned))
+
+    # Add the flattened numbers_mentioned list to a new key in the dictionary
+    dictionary['dates_mentioned'] = list(dict.fromkeys(dates_mentioned))
     
 
     # Return the dictionary to be filtered and processed in the pipeline

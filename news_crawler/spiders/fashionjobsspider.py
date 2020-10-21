@@ -120,6 +120,8 @@ class FashionJobsSpider(scrapy.Spider):
 			"article_urls": filter(list(dict.fromkeys(response.xpath(sources_dictionary.sources_dictionary[key]["landing_characteristics"]).extract()))),
 			"characteristics": sources_dictionary.sources_dictionary[key]["article_characteristics"],
 			"headline_characteristics": sources_dictionary.sources_dictionary[key]["headline_characteristics"],
+			"published_date_characteristics": sources_dictionary.sources_dictionary[key]["published_date_characteristics"],
+			"fashionb2b": sources_dictionary.sources_dictionary[key]["fashionb2b"],
 			"prefix": sources_dictionary.sources_dictionary[key]["article_url_prefix"],
 			
 		}
@@ -142,6 +144,9 @@ class FashionJobsSpider(scrapy.Spider):
 			# Add the headline characteristics to the parse keywords parameter
 			article_request.cb_kwargs['headline_characteristics'] = parse_source_result['headline_characteristics']
 
+			# Add the published_date_characteristics to the parse keywords parameter
+			article_request.cb_kwargs['published_date_characteristics'] = parse_source_result['published_date_characteristics']
+
 			# Add the country to the parse keywords parameter
 			article_request.cb_kwargs['country'] = parse_source_result['country']
 
@@ -151,6 +156,9 @@ class FashionJobsSpider(scrapy.Spider):
 			# Add the article url to the parse keywords parameter
 			article_request.cb_kwargs['url'] = url_prefix
 
+			# Add the fashionb2b boolean to the parse keywords parameter
+			article_request.cb_kwargs['fashionb2b'] = parse_source_result['fashionb2b']
+
 			# Process the response
 			yield article_request
 
@@ -158,16 +166,34 @@ class FashionJobsSpider(scrapy.Spider):
 
 	# Callback function to parse the text in the article urls returned from parse_source
 	# Function will return a list of dataframes after having processed and cleaned the text
-	def parse_article(self, response, publication_name, characteristics, headline_characteristics, country, language, url):
+	def parse_article(self, response, publication_name, characteristics, headline_characteristics, published_date_characteristics, country, language, url, fashionb2b):
 
 		# Clean the response object
 		full_text = clean_text.clean_text(response.xpath(characteristics).extract())
 
+		# Check if article is fashion related - (for non fashionb2b publications)
+		is_fashion_article = True
+
+		if fashionb2b == False:
+			if "fashion" in " ".join(full_text) or "Fashion" in " ".join(full_text):
+				pass
+			elif "clothing" in " ".join(full_text) or "Clothing" in " ".join(full_text):
+				pass
+			elif "Huawei" in " ".join(full_text):
+				pass
+			else:
+				is_fashion_article = False
+		
+
+
 		# Extract the headline
 		headline = clean_text.clean_text(response.xpath(headline_characteristics).extract())
 
+		# Extract the publication date
+		publication_date = clean_text.clean_text(response.xpath(published_date_characteristics).extract())
+
 		# Split the article into phrases and return a new list of dictionaries for each article
-		item_list = phrases.phraseify(full_text, publication_name, language, country, url, headline)
+		item_list = phrases.phraseify(full_text, publication_name, language, country, url, headline, publication_date)
 
 		# Loop through each phrase 
 		for item in item_list:
@@ -176,7 +202,7 @@ class FashionJobsSpider(scrapy.Spider):
 			target_dictionary = identify_match.identify_keywords_entities_numbers(item)
 
 			# Only return the item (pass it through to the pipeline) if there is a key phrase match
-			if len(target_dictionary['keywords']) != 0 and len(target_dictionary['phrase']) > 15:
+			if len(target_dictionary['keywords']) != 0 and len(target_dictionary['phrase']) > 15 and is_fashion_article == True:
 				yield target_dictionary
 			else:
 				pass

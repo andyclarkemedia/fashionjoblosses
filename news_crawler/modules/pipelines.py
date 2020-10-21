@@ -69,13 +69,15 @@ class ProcessItemPipeline:
 
 			# Add other fields
 			joblossmention_item['publication_name'] = item['publication_name']
-			joblossmention_item['date'] = current_date
+			joblossmention_item['date_accessed'] = current_date
 			joblossmention_item['country_name'] = item['country']
 			joblossmention_item['language'] = item['language']
 			joblossmention_item['extracted_text'] = item['phrase']
 			joblossmention_item['entities_mentioned'] = item['entities_mentioned']
 			joblossmention_item['numbers_mentioned'] = item['numbers_mentioned']
 			joblossmention_item['article_headline'] = item['article_headline']
+			joblossmention_item['publication_date'] = item['publication_date']
+			joblossmention_item['dates_mentioned'] = item['dates_mentioned']
 			joblossmention_item['article_url'] = item['url']
 			
 

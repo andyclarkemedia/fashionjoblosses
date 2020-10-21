@@ -20,7 +20,7 @@ class JobLossMentionSerializer(serializers.ModelSerializer):
 	# Meta information to setup the serializer
 	class Meta:
 		model = JobLossMention
-		fields = ['id', 'publication_name', 'extracted_text', 'language', 'entities_mentioned', 'numbers_mentioned', 'article_headline', 'article_url', 'country_name', 'date']
+		fields = ['id', 'publication_name', 'extracted_text', 'language', 'entities_mentioned', 'numbers_mentioned', 'dates_mentioned', 'article_headline', 'article_url', 'country_name', 'date_accessed', 'publication_date']
 
 
 

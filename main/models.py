@@ -76,12 +76,14 @@ class JobLossMention(models.Model):
 	# Declare the fields
 	publication_name = models.CharField(max_length=150)
 	country_name = models.CharField(max_length=150)
-	date = models.DateField()
+	date_accessed = models.DateField()
 	language = models.CharField(max_length=30)
 	extracted_text = models.TextField()
 	entities_mentioned = models.TextField()
 	numbers_mentioned = models.TextField()
 	article_headline = models.TextField()
+	publication_date = models.CharField(max_length=150)
+	dates_mentioned = models.TextField()
 	article_url = models.TextField()
 	
 
