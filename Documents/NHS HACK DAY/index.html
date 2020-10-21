@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>demo</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<p>
+			CAN I EAT THIS 
+		</p>
+		<div>
+			<p class="row-3-col-4">SEARCH TERM</p>
+			<input title="SEARCH" id="search-box-input" class="form-search-bar col-row-4" type="text">
+			<button id="submit-search-button" class="row-5-col-4 grey-box flex-container align-center justify-center">SUBMIT</button>
+		</div>
+
+		<div id="response-container">
+			<h1 id="product-name"></h1>
+			<h1 id="heading"></h2>
+			<h3 id="response-description"></h3>
+		</div>
+
+
+
+		<form>
+	        <label>Select your dieatary preferences</label>
+	        <select multiple name="conditions-form" id="dietary-preferences" for="dieatary-preferences" >
+	          	<option value = "gluten-free">Gluten Free</option>
+	          	<option value = "lactose-free">Lactose Free</option>
+	          	<option value = "peanut-free">Peanut Free</option>
+	          	<option value = "vegan">Vegan</option>
+	          	<option value = "vegetarian">Vegetarian</option>
+	        </select>
+
+     	</form>
+
+
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
