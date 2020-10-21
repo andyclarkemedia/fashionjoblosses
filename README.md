@@ -14,6 +14,15 @@ This repository holds a crawler built with Scrapy and a Django app used to store
 #### <a href="https://github.com/andyclarkemedia/fashionjoblosses/tree/master/">TOP LEVEL</a>
 Project configuration files alongside 'tasks.py' - used to run scheduled tasks on Heroku
 
+#### <a href="https://github.com/andyclarkemedia/fashionjoblosses/tree/master/fashionjoblosses">Fashion Job Losses</a>
+Project settings and config files
+
+#### <a href="https://github.com/andyclarkemedia/fashionjoblosses/tree/master/main">Main</a>
+Django DB models & API configuration - Defines models, views, serializers & url patterns to store and access data
+
+#### <a href="https://github.com/andyclarkemedia/fashionjoblosses/tree/master/news_crawler">News Crawler</a>
+Scrapy crawler and pipeline - used to collect & process incoming data. Contains spider, pipelines, source list and processing modules
+
 
 
 ##
