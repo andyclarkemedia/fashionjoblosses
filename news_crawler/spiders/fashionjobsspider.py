@@ -36,7 +36,9 @@ from .. import settings
 # Module Imports
 from ..modules import sources_dictionary as sources_dictionary
 from ..modules import clean_text as clean_text
+from ..modules import phrases as phrases
 from ..modules import identify_match as identify_match
+from ..modules.items import VisitedURLItem as VisitedURLItem
 
 
 
@@ -117,6 +119,7 @@ class FashionJobsSpider(scrapy.Spider):
 			"language": sources_dictionary.sources_dictionary[key]["language"],
 			"article_urls": filter(list(dict.fromkeys(response.xpath(sources_dictionary.sources_dictionary[key]["landing_characteristics"]).extract()))),
 			"characteristics": sources_dictionary.sources_dictionary[key]["article_characteristics"],
+			"headline_characteristics": sources_dictionary.sources_dictionary[key]["headline_characteristics"],
 			"prefix": sources_dictionary.sources_dictionary[key]["article_url_prefix"],
 			
 		}
@@ -136,6 +139,9 @@ class FashionJobsSpider(scrapy.Spider):
 			# Add the article characteristics to the parse keywords parameter
 			article_request.cb_kwargs['characteristics'] = parse_source_result['characteristics']
 
+			# Add the headline characteristics to the parse keywords parameter
+			article_request.cb_kwargs['headline_characteristics'] = parse_source_result['headline_characteristics']
+
 			# Add the country to the parse keywords parameter
 			article_request.cb_kwargs['country'] = parse_source_result['country']
 
@@ -152,13 +158,16 @@ class FashionJobsSpider(scrapy.Spider):
 
 	# Callback function to parse the text in the article urls returned from parse_source
 	# Function will return a list of dataframes after having processed and cleaned the text
-	def parse_article(self, response, publication_name, characteristics, country, language, url):
+	def parse_article(self, response, publication_name, characteristics, headline_characteristics, country, language, url):
 
 		# Clean the response object
 		full_text = clean_text.clean_text(response.xpath(characteristics).extract())
 
+		# Extract the headline
+		headline = clean_text.clean_text(response.xpath(headline_characteristics).extract())
+
 		# Split the article into phrases and return a new list of dictionaries for each article
-		item_list = phrases.phraseify(full_text, publication_name, language, country, url)
+		item_list = phrases.phraseify(full_text, publication_name, language, country, url, headline)
 
 		# Loop through each phrase 
 		for item in item_list:
@@ -167,7 +176,7 @@ class FashionJobsSpider(scrapy.Spider):
 			target_dictionary = identify_match.identify_keywords_entities_numbers(item)
 
 			# Only return the item (pass it through to the pipeline) if there is a key phrase match
-			if len(target_dictionary['keywords']) != 0:
+			if len(target_dictionary['keywords']) != 0 and len(target_dictionary['phrase']) > 15:
 				yield target_dictionary
 			else:
 				pass

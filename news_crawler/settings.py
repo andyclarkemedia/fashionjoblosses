@@ -9,6 +9,28 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+# ==============
+# Added Code Below
+# ==============
+
+import os
+import sys
+
+# DJANGO INTEGRATION
+ 
+sys.path.append(os.path.dirname(os.path.abspath('..')))
+os.environ['DJANGO_SETTINGS_MODULE'] = 'fashionjoblosses.settings'
+
+import django
+django.setup()
+ 
+# DJANGO INTEGRATION
+ 
+# ==============
+# End of Added Code
+# ==============
+
+
 BOT_NAME = 'news_crawler'
 
 SPIDER_MODULES = ['news_crawler.spiders']
@@ -17,7 +39,7 @@ NEWSPIDER_MODULE = 'news_crawler.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'news_crawler (+http://www.yourdomain.com)'
-
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36; Andy Clarke/fashionjoblosses@gmail.com"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
@@ -64,9 +86,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'news_crawler.pipelines.NewsCrawlerPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'news_crawler.modules.pipelines.ProcessItemPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

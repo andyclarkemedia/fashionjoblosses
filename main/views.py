@@ -16,8 +16,8 @@ from rest_framework import status
 from rest_framework import filters
 
 # Local imports 
-from .models import JobLossMention, Country, Date
-from .serializers import CountrySerializer, JobLossMentionSerializer, DateSerializer
+from .models import JobLossMention, Country
+from .serializers import CountrySerializer, JobLossMentionSerializer
 
 
 
@@ -32,7 +32,7 @@ class JobLossMentionListCreate(generics.ListCreateAPIView):
 
 
 	# Allow search functionality
-	search_fields = ['date_text', 'country', 'publication_name']
+	search_fields = ['date', 'country', 'publication_name']
 	filter_backends = (filters.SearchFilter,)
 
 	# Setting the filter options
@@ -85,34 +85,34 @@ class CountryListCreate(generics.ListCreateAPIView):
 		return queryset
 
 
-#===================
-# The Date API view - Filter by date // Search by date
-#===================
-class DateListCreate(generics.ListCreateAPIView):
-	queryset = Date.objects.all()
+# #===================
+# # The Date API view - Filter by date // Search by date
+# #===================
+# class DateListCreate(generics.ListCreateAPIView):
+# 	queryset = Date.objects.all()
 
-	# Declare serializer_class
-	serializer_class = DateSerializer
+# 	# Declare serializer_class
+# 	serializer_class = DateSerializer
 
 
-	# Allow search functionality
-	search_fields = ['date']
-	filter_backends = (filters.SearchFilter,)
+# 	# Allow search functionality
+# 	search_fields = ['date']
+# 	filter_backends = (filters.SearchFilter,)
 
-	# Setting the filter options
-	def get_queryset(self):
-		""" Optionally restricts the returned job loss mention by filtering against a `country` query parameter in the URL. """
+# 	# Setting the filter options
+# 	def get_queryset(self):
+# 		""" Optionally restricts the returned job loss mention by filtering against a `country` query parameter in the URL. """
 
-		# Initially set the returned objects to be all sentences
-		queryset = Date.objects.all()
+# 		# Initially set the returned objects to be all sentences
+# 		queryset = Date.objects.all()
 
-		# Access the request params
-		date = self.request.query_params.get('date', None)
+# 		# Access the request params
+# 		date = self.request.query_params.get('date', None)
 
-		# If a player name is specified ---> Set the filter
-		if date is not None:
-			queryset = queryset.filter(date=date)
+# 		# If a player name is specified ---> Set the filter
+# 		if date is not None:
+# 			queryset = queryset.filter(date=date)
 
-		# Return the appropriate queryset
-		return queryset
+# 		# Return the appropriate queryset
+# 		return queryset
 

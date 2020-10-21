@@ -18,18 +18,18 @@ from django.db import models
 # =============
 
 
-class Date(models.Model):
+# class Date(models.Model):
 
-	# Declare the fields
-	date = models.DateField()
+# 	# Declare the fields
+# 	date = models.DateField()
 
-	# Declare how the entry should appear on display
-	def __str__(self):
-		return "{}".format(self.date)
+# 	# Declare how the entry should appear on display
+# 	def __str__(self):
+# 		return "{}".format(self.date)
 
-	# Specify the ordering of the data
-	class Meta:
-		ordering = ['date']
+# 	# Specify the ordering of the data
+# 	class Meta:
+# 		ordering = ['date']
 
 
 
@@ -43,8 +43,8 @@ class Date(models.Model):
 
 class Country(models.Model):
 
-	# Link to the Date Table 
-	date = models.ForeignKey(Date, on_delete=models.CASCADE, related_name="countries")
+	# # Link to the Date Table 
+	# date = models.ForeignKey(Date, on_delete=models.CASCADE, related_name="countries")
 
 	# Declare the fields
 	country = models.CharField(max_length=150)
@@ -76,7 +76,7 @@ class JobLossMention(models.Model):
 	# Declare the fields
 	publication_name = models.CharField(max_length=150)
 	country_name = models.CharField(max_length=150)
-	date_text = models.DateField()
+	date = models.DateField()
 	language = models.CharField(max_length=30)
 	extracted_text = models.TextField()
 	entities_mentioned = models.TextField()

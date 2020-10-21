@@ -12,7 +12,6 @@
 
 # TASK 1: Call the spider to crawl - store the results in the database
 # TASK 2: Check for VisitedURLs older than 100 days and delete them from the database
-# TASK 3: 
 
 # =============
 #  IMPORTS 
@@ -30,7 +29,7 @@ from main.models import VisitedURL
 # CHECK DAY OF THE WEEK (MONDAY = 0)
 # =======================================
 
-if datetime.datetime.today().weekday() == 0:
+if datetime.datetime.today().weekday():
 
 	# =============
 	#  TASK 1 - crawl
@@ -38,10 +37,10 @@ if datetime.datetime.today().weekday() == 0:
 	crawl.crawl()
 
 
-	# =============
-	#  TASK 2 - Delete old URLs
-	# =============
+	# # =============
+	# #  TASK 2 - Delete old URLs
+	# # =============
 
-	today = datetime.datetime.now().date()
-	date_threshold = today - datetime.timedelta(days=100)
-	VisitedURL.objects.filter(date_visited__lte=date_threshold).delete()
+	# today = datetime.datetime.now().date()
+	# date_threshold = today - datetime.timedelta(days=100)
+	# VisitedURL.objects.filter(date_visited__lte=date_threshold).delete()

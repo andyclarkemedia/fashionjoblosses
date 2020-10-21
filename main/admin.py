@@ -10,7 +10,7 @@
 from django.contrib import admin
 
 # Local imports 
-from main.models import Country, Date, JobLossMention
+from main.models import Country, JobLossMention, VisitedURL
 
 
 # ===============
@@ -37,16 +37,16 @@ class CountryDisplay(admin.ModelAdmin):
 	list_filter = ('country', )
 
 
-# ==========
-# Date
-# ==========
+# # ==========
+# # Date
+# # ==========
 
 
-class DateDisplay(admin.ModelAdmin):
+# class DateDisplay(admin.ModelAdmin):
 
-	list_display = ('date', )
+# 	list_display = ('date', )
 
-	list_filter = ('date', )
+# 	list_filter = ('date', )
 
 
 
@@ -57,10 +57,20 @@ class DateDisplay(admin.ModelAdmin):
 
 class JobLossMentionDisplay(admin.ModelAdmin):
 
-	list_display = ('publication_name', 'extracted_text', 'numbers_mentioned')
+	list_display = ('date', 'article_headline', 'publication_name', 'extracted_text', 'numbers_mentioned', 'entities_mentioned', 'article_url')
 
-	list_filter = ('country', 'date_text')
+	list_filter = ('country', 'date')
 
+
+# ==========
+# URLs
+# ==========
+
+class VisitedUrlDisplay(admin.ModelAdmin):
+
+	list_display = ('date_visited','url')
+
+	list_filter = ('date_visited', )
 
 
 
@@ -69,8 +79,9 @@ class JobLossMentionDisplay(admin.ModelAdmin):
 # Register your models here
 # ================
 admin.site.register(Country, CountryDisplay)
-admin.site.register(Date, DateDisplay)
+# admin.site.register(Date, DateDisplay)
 admin.site.register(JobLossMention, JobLossMentionDisplay)
+admin.site.register(VisitedURL, VisitedUrlDisplay)
 
 
 

@@ -17,6 +17,6 @@ from . import views
 
 urlpatterns = [
     path('api/countries/', views.CountryListCreate.as_view()),
-    path('api/dates/', views.DateListCreate.as_view()),
+    # path('api/dates/', views.DateListCreate.as_view()),
     path('api/joblossmentions/', views.JobLossMentionListCreate.as_view()),
 ]

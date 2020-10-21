@@ -16,7 +16,7 @@ from scrapy_djangoitem import DjangoItem
 # Accessing top level
 import sys
 sys.path.append("..")
-from main.models import Date, Country, JobLossMention, VisitedURL
+from main.models import Country, JobLossMention, VisitedURL
 
 
 
@@ -24,9 +24,9 @@ from main.models import Date, Country, JobLossMention, VisitedURL
 class JobLossMentionItem(DjangoItem):
 	django_model = JobLossMention
 
-# Date - convert the django model into a scrapy django item
-class DateItem(DjangoItem):
-	django_model = Date
+# # Date - convert the django model into a scrapy django item
+# class DateItem(DjangoItem):
+# 	django_model = Date
 
 # Country - convert the django model into a scrapy django item
 class CountryItem(DjangoItem):

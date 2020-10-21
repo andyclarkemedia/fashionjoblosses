@@ -50,9 +50,13 @@ def identify_keywords_entities_numbers(dictionary):
 
     doc = nlp_english(dictionary['phrase'])
 
-    for ent in doc.ents:
-        if str(ent.label_) == "PERSON" or str(ent.label_) == "ORG":
-            entities_mentioned.append(str(ent))
+    # for ent in doc.ents:
+    #     if str(ent.label_) == "PERSON" or str(ent.label_) == "ORG":
+    #         entities_mentioned.append(str(ent))
+
+    for i, tok in enumerate(doc):
+        if str(tok.pos_) == "PROPN":
+            entities_mentioned.append(str(tok))
 
 
     # =============
@@ -69,13 +73,13 @@ def identify_keywords_entities_numbers(dictionary):
     # =============
     
     # Add the flattened keyword_matches list to a new key in the dictionary
-    dictionary['keywords'] = [y for x in keyword_matches for y in x]
+    dictionary['keywords'] = keyword_matches
 
     # Add the flattened entities_mentioned list to a new key in the dictionary
-    dictionary['entities_mentioned'] = [y for x in entities_mentioned for y in x]
+    dictionary['entities_mentioned'] = list(dict.fromkeys(entities_mentioned))
 
     # Add the flattened numbers_mentioned list to a new key in the dictionary
-    dictionary['numbers_mentioned'] = [y for x in numbers_mentioned for y in x]
+    dictionary['numbers_mentioned'] = numbers_mentioned
     
 
     # Return the dictionary to be filtered and processed in the pipeline

@@ -33,4 +33,4 @@ def remove_tags(text):
 # Core function that is called by article_scraper
 def clean_text(full_text_list):
     
-    return [remove_tags(item) for item in full_text_list if len(item) > 5]
+    return [remove_tags(item) for item in full_text_list]

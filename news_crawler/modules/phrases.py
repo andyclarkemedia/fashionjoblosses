@@ -26,7 +26,7 @@ from datetime import datetime
 #  Split into phrases
 # =============
 
-def phraseify(article_p_list, publication_name, language, country, article_url):
+def phraseify(article_p_list, publication_name, language, country, article_url, headline, publication_date):
 
 	# Declare the article_phrase_dictionary_list
 	article_phrase_dictionary_list = []
@@ -45,16 +45,16 @@ def phraseify(article_p_list, publication_name, language, country, article_url):
 
 			# Split date and time
 			date = datetime_string.split(" ")[0]
-			time = datetime_string.split(" ")[1]
 
 			# Create the individual phrase dictionary
 			phrase_dictionary = {
 				"publication_name": publication_name,
+				"article_headline": str(headline)[1:-1],
+				"publication_date": publication_date,
 				"url": article_url,
 				"language": language,
 				"country": country,
 				"date": date,
-				"time": time,
 				"phrase": item,
 			}
 
