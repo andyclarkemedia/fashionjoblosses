@@ -38,6 +38,7 @@ from ..modules import sources_dictionary as sources_dictionary
 from ..modules import clean_text as clean_text
 from ..modules import phrases as phrases
 from ..modules import identify_match as identify_match
+from ..modules.text_translator import translate_text as translate_text
 from ..modules.items import VisitedURLItem as VisitedURLItem
 
 
@@ -169,7 +170,11 @@ class FashionJobsSpider(scrapy.Spider):
 	def parse_article(self, response, publication_name, characteristics, headline_characteristics, published_date_characteristics, country, language, url, fashionb2b):
 
 		# Clean the response object
-		full_text = clean_text.clean_text(response.xpath(characteristics).extract())
+		full_text = translate_text(clean_text.clean_text(response.xpath(characteristics).extract()), language)
+
+		print("Original Text", full_text)
+
+		# print("Translated Text", translate_text(full_text, language))
 
 		# Check if article is fashion related - (for non fashionb2b publications)
 		is_fashion_article = True
@@ -179,18 +184,16 @@ class FashionJobsSpider(scrapy.Spider):
 				pass
 			elif "clothing" in " ".join(full_text) or "Clothing" in " ".join(full_text):
 				pass
-			elif "Huawei" in " ".join(full_text):
-				pass
 			else:
 				is_fashion_article = False
 		
 
 
 		# Extract the headline
-		headline = clean_text.clean_text(response.xpath(headline_characteristics).extract())
+		headline = translate_text(clean_text.clean_text(response.xpath(headline_characteristics).extract()), language)
 
 		# Extract the publication date
-		publication_date = clean_text.clean_text(response.xpath(published_date_characteristics).extract())
+		publication_date = translate_text(clean_text.clean_text(response.xpath(published_date_characteristics).extract()), language)
 
 		# Split the article into phrases and return a new list of dictionaries for each article
 		item_list = phrases.phraseify(full_text, publication_name, language, country, url, headline, publication_date)

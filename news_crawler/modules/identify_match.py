@@ -39,7 +39,7 @@ def identify_keywords_entities_numbers(dictionary):
     #  IDENTIFY KEYWORDS
     # =============
 
-    keyword_list = keyword_dictionary.job_loss_keyword_dictionary[dictionary['language']]
+    keyword_list = keyword_dictionary.job_loss_keyword_dictionary['English']
         
     # Loop through saved keywords and identify a match with the article phrase
     for word in keyword_list:
