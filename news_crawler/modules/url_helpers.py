@@ -259,3 +259,20 @@ def vnexpress_url_list_creator():
 		urls.append("https://vnexpress.net/tag/det-may-736343-p"+ str(n))
 
 	return urls
+
+
+
+# ================
+# ShareBiz - Bangladesh
+# ================
+
+
+def sharebiz_url_list_creator():
+
+	urls = []
+
+	# range(1, 55)
+	for n in range(1,5): 
+		urls.append("https://sharebiz.net/category/today-news/industrial-trade/trade-news/page/"+ str(n) +'/')
+
+	return urls

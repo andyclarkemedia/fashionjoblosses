@@ -10,7 +10,7 @@
 # IMPORTS 
 # ================
 
-from ..modules.url_helpers import reuters_url_list_creator, wwd_url_list_creator, markup_url_list_creator, tz_url_list_creator, fn_url_list_creator, rdbl_url_list_creator, dansk_url_list_creator, modaes_url_list_creator, fmitaly_url_list_creator, juststyle_url_list_creator, fibrefashion_allnews_url_list_creator, fibrefashion_articles_url_list_creator, nikkei_url_list_creator, vnexpress_url_list_creator
+from ..modules.url_helpers import reuters_url_list_creator, wwd_url_list_creator, markup_url_list_creator, tz_url_list_creator, fn_url_list_creator, rdbl_url_list_creator, dansk_url_list_creator, modaes_url_list_creator, fmitaly_url_list_creator, juststyle_url_list_creator, fibrefashion_allnews_url_list_creator, fibrefashion_articles_url_list_creator, nikkei_url_list_creator, vnexpress_url_list_creator, sharebiz_url_list_creator
 
 
 
@@ -264,6 +264,18 @@ sources_dictionary_pause = {
 		"article_url_prefix": "https://www.bbc.co.uk",
 		"fashionb2b": False
 	},
+	"Journal du Textile - Home": {
+		"country": "France",
+		"language": "French",
+		"landing_urls": ['https://www.journaldutextile.com/'],
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//article",
+		"headline_characteristics": "//h2",
+		"published_date_characteristics": "//button//font",
+		"article_url_prefix": "https://www.journaldutextile.com/",
+		"fashionb2b": True
+	},
+	
 
 
 }
@@ -288,27 +300,28 @@ sources_dictionary_not_working = {
 
 sources_dictionary = {
 
-	"Modaes": {
-		"country": "Spain",
-		"language": "Spanish",
-		"landing_urls": modaes_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1[contains(@class, 'title')]",
-		"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
-		"article_url_prefix": "https://www.modaes.es/",
+	
+	"Journal du Textile - This Week": {
+		"country": "France",
+		"language": "French",
+		"landing_urls": ['https://www.journaldutextile.com/'],
+		"landing_characteristics": '//li//a/@href',
+		"article_characteristics": "//article",
+		"headline_characteristics": "//h2",
+		"published_date_characteristics": "//button//font",
+		"article_url_prefix": "https://www.journaldutextile.com/",
 		"fashionb2b": True
-	}
-	# "ShareBiz - Bangladesh": {
+	},
+	# "ShareBiz Trade News - Bangladesh": {
 	# 	"country": "Bangladesh",
 	# 	"language": "Bangladeshi",
-	# 	"landing_urls": modaes_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
+	# 	"landing_urls": sharebiz_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
 	# 	"article_characteristics": "//p",
 	# 	"headline_characteristics": "//h1[contains(@class, 'title')]",
-	# 	"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
-	# 	"article_url_prefix": "https://www.modaes.es/",
-	# 	"fashionb2b": True
+	# 	"published_date_characteristics": "//div[contains(@class, 'herald-date')]//font",
+	# 	"article_url_prefix": "",
+	# 	"fashionb2b": False
 	# }
 
 }
