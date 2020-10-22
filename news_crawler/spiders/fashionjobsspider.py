@@ -172,7 +172,7 @@ class FashionJobsSpider(scrapy.Spider):
 		# Clean the response object
 		full_text = translate_text(clean_text.clean_text(response.xpath(characteristics).extract()), language)
 
-		# print("Original Text", full_text)
+		print("Original Text", full_text)
 
 		# print("Translated Text", translate_text(full_text, language))
 
