@@ -255,7 +255,6 @@ def vnexpress_url_list_creator():
 
 	urls = []
 
-	# range(1,61)
 	for n in range(1,2): 
 		urls.append("https://vnexpress.net/tag/det-may-736343-p"+ str(n))
 
