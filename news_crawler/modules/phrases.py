@@ -22,6 +22,8 @@
 from nltk.tokenize import sent_tokenize
 from datetime import datetime
 
+nltk.download('punkt')
+
 # =============
 #  Split into phrases
 # =============
