@@ -288,27 +288,27 @@ sources_dictionary_not_working = {
 
 sources_dictionary = {
 
-	"VN Express": {
-		"country": "Vietnam",
-		"language": "Vietnamese",
-		"landing_urls": vnexpress_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
+	"Modaes": {
+		"country": "Spain",
+		"language": "Spanish",
+		"landing_urls": modaes_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
 		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'date')]",
-		"article_url_prefix": "",
+		"headline_characteristics": "//h1[contains(@class, 'title')]",
+		"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
+		"article_url_prefix": "https://www.modaes.es/",
 		"fashionb2b": True
-	},
-	"Indian Economic Times - Textile Industry": {
-		"country": "India",
-		"language": "English",
-		"landing_urls": ['https://economictimes.indiatimes.com/topic/Indian-textile-industry'],
-		"landing_characteristics": '//div[contains(@class, "topicstry")]//a/@href',
-		"article_characteristics": "//div[contains(@class, 'artText')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://economictimes.indiatimes.com/",
-		"fashionb2b": True
-	},
+	}
+	# "ShareBiz - Bangladesh": {
+	# 	"country": "Bangladesh",
+	# 	"language": "Bangladeshi",
+	# 	"landing_urls": modaes_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1[contains(@class, 'title')]",
+	# 	"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
+	# 	"article_url_prefix": "https://www.modaes.es/",
+	# 	"fashionb2b": True
+	# }
 
 }
