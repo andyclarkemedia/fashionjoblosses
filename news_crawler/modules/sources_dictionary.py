@@ -99,39 +99,39 @@ sources_dictionary = {
 	# 	"fashionb2b": True,
 	# 	"article_url_prefix": ""
 	# },
-	# "TextilZeitung - Business": {
-	# 	"country": "Austria",
-	# 	"language": "German",
-	# 	"landing_urls": tz_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": "https://www.textilzeitung.at"
-	# },
-	# "Fashion Network Belgium - Business News": {
-	# 	"country": "Belgium",
-	# 	"language": "French",
-	# 	"landing_urls": fn_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
-	# "Retail Detail Belgium - Fashion": {
-	# 	"country": "Belgium",
-	# 	"language": "French",
-	# 	"landing_urls": rdbl_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@href, "https")]/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'date')]",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": True
-	# },
+	"TextilZeitung - Business": {
+		"country": "Austria",
+		"language": "German",
+		"landing_urls": tz_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+		"fashionb2b": True,
+		"article_url_prefix": "https://www.textilzeitung.at"
+	},
+	"Fashion Network Belgium - Business News": {
+		"country": "Belgium",
+		"language": "French",
+		"landing_urls": fn_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
+	"Retail Detail Belgium - Fashion": {
+		"country": "Belgium",
+		"language": "French",
+		"landing_urls": rdbl_url_list_creator(),
+		"landing_characteristics": '//a[contains(@href, "https")]/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'date')]",
+		"article_url_prefix": "",
+		"fashionb2b": True
+	},
 	# "Dansk Mode & Textil": {
 	# 	"country": "Denmark",
 	# 	"language": "Danish",
@@ -242,17 +242,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://economictimes.indiatimes.com/",
 	# 	"fashionb2b": True
 	# },
-	"BBC - Retailing": {
-		"country": "United Kingdom",
-		"language": "English",
-		"landing_urls": ['https://www.bbc.co.uk/news/topics/ce1qrvlegjyt/retailing'],
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://www.bbc.co.uk",
-		"fashionb2b": False
-	},
+	# "BBC - Retailing": {
+	# 	"country": "United Kingdom",
+	# 	"language": "English",
+	# 	"landing_urls": ['https://www.bbc.co.uk/news/topics/ce1qrvlegjyt/retailing'],
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://www.bbc.co.uk",
+	# 	"fashionb2b": False
+	# },
 	# "BBC - Business": {
 	# 	"country": "United Kingdom",
 	# 	"language": "English",
