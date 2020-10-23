@@ -20,7 +20,7 @@ def reuters_url_list_creator():
 	urls = []
 
 	# range(1,1201)
-	for n in range(1, 1201):
+	for n in range(336, 1201):
 		urls.append("https://uk.reuters.com/news/archive/businessNews?view=page&page="+ str(n))
 
 	return urls
