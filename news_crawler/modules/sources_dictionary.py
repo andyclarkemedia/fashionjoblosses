@@ -19,7 +19,7 @@ from ..modules.url_helpers import reuters_url_list_creator, wwd_url_list_creator
 # ================
 
 
-sources_dictionary_pause = {
+sources_dictionary = {
 
 
 	"Drapers - Home": {
@@ -628,7 +628,7 @@ sources_dictionary_not_working = {
 }
 
 
-sources_dictionary = {
+sources_dictionary_test = {
 
 	#False
 	"BBC - Retailing": {
