@@ -41,7 +41,7 @@ NEWSPIDER_MODULE = 'news_crawler.spiders'
 #USER_AGENT = 'news_crawler (+http://www.yourdomain.com)'
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36; Andy Clarke/fashionjoblosses@gmail.com"
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
