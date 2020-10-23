@@ -66,17 +66,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "",
 	# 	"fashionb2b": True
 	# },
-	"Reuters - Business News": {
-		"country": "Global",
-		"language": "English",
-		"landing_urls": reuters_url_list_creator(),
-		"landing_characteristics": '//a[contains(@href, "article")]/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//meta[contains(@property, 'og:article:published_time')]/@content",
-		"fashionb2b": False,
-		"article_url_prefix": "https://uk.reuters.com"
-	},
+	# "Reuters - Business News": {
+	# 	"country": "Global",
+	# 	"language": "English",
+	# 	"landing_urls": reuters_url_list_creator(),
+	# 	"landing_characteristics": '//a[contains(@href, "article")]/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//meta[contains(@property, 'og:article:published_time')]/@content",
+	# 	"fashionb2b": False,
+	# 	"article_url_prefix": "https://uk.reuters.com"
+	# },
 	"Womans Wear Daily - Business": {
 		"country": "Global",
 		"language": "English",
