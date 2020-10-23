@@ -631,16 +631,16 @@ sources_dictionary_not_working = {
 sources_dictionary = {
 
 	#False
-	"Fashion Network UK - Business News": {
+	"BBC - Retailing": {
 		"country": "United Kingdom",
 		"language": "English",
-		"landing_urls": fn_uk_url_list_creator(),
+		"landing_urls": ['https://www.bbc.co.uk/news/topics/ce1qrvlegjyt/retailing'],
 		"landing_characteristics": '//article//a/@href',
 		"article_characteristics": "//p",
 		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-		"fashionb2b": True,
-		"article_url_prefix": ""
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "https://www.bbc.co.uk",
+		"fashionb2b": False
 	},
 	# "ShareBiz Trade News - Bangladesh": {
 	# 	"country": "Bangladesh",
