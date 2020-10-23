@@ -6,7 +6,7 @@ A scraper tracking fashion industry job losses in 2020 and beyond ....
 > This project scrapes and processes news articles from fashion publishers in order to find mentions of job losses. 
 
 
-## About this repository
+## Technical Details
 This repository holds a crawler built with Scrapy and a Django app used to store and access database records. 
 
 ## Contents
