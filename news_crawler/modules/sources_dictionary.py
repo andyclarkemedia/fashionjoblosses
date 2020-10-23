@@ -88,17 +88,17 @@ sources_dictionary = {
 	# 	"fashionb2b": True,
 	# 	"article_url_prefix": ""
 	# },
-	"Mark Up - News": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": markup_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "td-module-thumb")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//time[contains(@class, 'entry-date')]",
-		"fashionb2b": True,
-		"article_url_prefix": ""
-	},
+	# "Mark Up - News": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": markup_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "td-module-thumb")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//time[contains(@class, 'entry-date')]",
+	# 	"fashionb2b": True,
+	# 	"article_url_prefix": ""
+	# },
 	# "TextilZeitung - Business": {
 	# 	"country": "Austria",
 	# 	"language": "German",
@@ -242,17 +242,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://economictimes.indiatimes.com/",
 	# 	"fashionb2b": True
 	# },
-	# "BBC - Retailing": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": ['https://www.bbc.co.uk/news/topics/ce1qrvlegjyt/retailing'],
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://www.bbc.co.uk",
-	# 	"fashionb2b": False
-	# },
+	"BBC - Retailing": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": ['https://www.bbc.co.uk/news/topics/ce1qrvlegjyt/retailing'],
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "https://www.bbc.co.uk",
+		"fashionb2b": False
+	},
 	# "BBC - Business": {
 	# 	"country": "United Kingdom",
 	# 	"language": "English",

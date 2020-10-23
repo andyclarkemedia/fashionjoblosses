@@ -46,7 +46,7 @@ class JobLossMentionListCreate(generics.ListCreateAPIView):
 		date_accessed = self.request.query_params.get('date_accessed', None)
 
 		# If a player name is specified ---> Set the filter
-		if publication_name is not None:
+		if date_accessed is not None:
 			queryset = queryset.filter(date_accessed=date_accessed)
 
 		# Return the appropriate queryset
