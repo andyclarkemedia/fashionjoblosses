@@ -77,17 +77,17 @@ sources_dictionary = {
 	# 	"fashionb2b": False,
 	# 	"article_url_prefix": "https://uk.reuters.com"
 	# },
-	# "Womans Wear Daily - Business": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": wwd_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "archive__post")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@id, 'author-container')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
+	"Womans Wear Daily - Business": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": wwd_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "archive__post")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@id, 'author-container')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
 	# "Mark Up - News": {
 	# 	"country": "Italy",
 	# 	"language": "Italian",
