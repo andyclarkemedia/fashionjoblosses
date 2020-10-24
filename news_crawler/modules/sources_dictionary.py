@@ -374,72 +374,72 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.ilsole24ore.com/",
 	# 	"fashionb2b": True
 	# },
-	# "Fashion United Business - Spain": {
-	# 	"country": "Spain",
-	# 	"language": "Spanish",
-	# 	"landing_urls": fu_biz_spain_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.es/",
-	# 	"fashionb2b": True
-	# },
-	# "Fashion United Fashion - Spain": {
-	# 	"country": "Spain",
-	# 	"language": "Spanish",
-	# 	"landing_urls": fu_fashion_spain_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.es/",
-	# 	"fashionb2b": True
-	# },
-	# "Fashion United Retail - Spain": {
-	# 	"country": "Spain",
-	# 	"language": "Spanish",
-	# 	"landing_urls": fu_retail_spain_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.es/",
-	# 	"fashionb2b": True
-	# },
-	"Fashion United Business - France": {
-		"country": "France",
-		"language": "French",
-		"landing_urls": fu_biz_france_url_list_creator(),
+	"Fashion United Business - Spain": {
+		"country": "Spain",
+		"language": "Spanish",
+		"landing_urls": fu_biz_spain_url_list_creator(),
 		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
 		"article_characteristics": "//p",
 		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
 		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.fr/",
+		"article_url_prefix": "https://fashionunited.es/",
 		"fashionb2b": True
 	},
-	"Fashion United Fashion - France": {
-		"country": "France",
-		"language": "French",
-		"landing_urls": fu_fashion_france_url_list_creator(),
+	"Fashion United Fashion - Spain": {
+		"country": "Spain",
+		"language": "Spanish",
+		"landing_urls": fu_fashion_spain_url_list_creator(),
 		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
 		"article_characteristics": "//p",
 		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
 		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.fr/",
+		"article_url_prefix": "https://fashionunited.es/",
 		"fashionb2b": True
 	},
-	"Fashion United Retail - France": {
-		"country": "France",
-		"language": "French",
-		"landing_urls": fu_retail_france_url_list_creator(),
+	"Fashion United Retail - Spain": {
+		"country": "Spain",
+		"language": "Spanish",
+		"landing_urls": fu_retail_spain_url_list_creator(),
 		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
 		"article_characteristics": "//p",
 		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
 		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.fr/",
+		"article_url_prefix": "https://fashionunited.es/",
 		"fashionb2b": True
 	},
+	# "Fashion United Business - France": {
+	# 	"country": "France",
+	# 	"language": "French",
+	# 	"landing_urls": fu_biz_france_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.fr/",
+	# 	"fashionb2b": True
+	# },
+	# "Fashion United Fashion - France": {
+	# 	"country": "France",
+	# 	"language": "French",
+	# 	"landing_urls": fu_fashion_france_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.fr/",
+	# 	"fashionb2b": True
+	# },
+	# "Fashion United Retail - France": {
+	# 	"country": "France",
+	# 	"language": "French",
+	# 	"landing_urls": fu_retail_france_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.fr/",
+	# 	"fashionb2b": True
+	# },
 	# "Fashion United Business - Netherlands": {
 	# 	"country": "Netherlands",
 	# 	"language": "Dutch",
