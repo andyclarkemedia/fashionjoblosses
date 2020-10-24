@@ -143,17 +143,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.dmogt.dk",
 	# 	"fashionb2b": True
 	# },
-	"Modaes": {
-		"country": "Spain",
-		"language": "Spanish",
-		"landing_urls": modaes_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1[contains(@class, 'title')]",
-		"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
-		"article_url_prefix": "https://www.modaes.es/",
-		"fashionb2b": True
-	},
+	# "Modaes": {
+	# 	"country": "Spain",
+	# 	"language": "Spanish",
+	# 	"landing_urls": modaes_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1[contains(@class, 'title')]",
+	# 	"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
+	# 	"article_url_prefix": "https://www.modaes.es/",
+	# 	"fashionb2b": True
+	# },
 	# "Fashion Magazine Italy - Business": {
 	# 	"country": "Italy",
 	# 	"language": "Italian",
@@ -165,61 +165,61 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.fashionmagazine.it",
 	# 	"fashionb2b": True
 	# },
-	# "Business of Fashion **": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": ['https://www.businessoffashion.com/articles'],
-	# 	"landing_characteristics": '//a[contains(@tracker, "Article")]/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1[contains(@class, 'article-title')]",
-	# 	"published_date_characteristics": "//div[contains(@class, 'text-uppercase sans-serif small-font horizontal-borders margin-vertical-xs-3')]",
-	# 	"article_url_prefix": "https://www.businessoffashion.com/",
-	# 	"fashionb2b": True
-	# },
-	# "Just Style": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": juststyle_url_list_creator(),
-	# 	"landing_characteristics": '//p[contains(@class, "linktitle")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1[contains(@class, 'articleTitle')]",
-	# 	"published_date_characteristics": "//p[contains(@class, 'date')]",
-	# 	"article_url_prefix": "https://www.just-style.com",
-	# 	"fashionb2b": True
-	# },
-	# "Fibre 2 Fashion - All News": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": fibrefashion_allnews_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
-	# 	"article_characteristics": "//span[contains(@class, 'news-details-txt')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'news-date')]",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": True
-	# },
-	# "Fibre 2 Fashion - Articles": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": fibrefashion_articles_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
-	# 	"article_characteristics": "//div[contains(@class, 'article-text')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'published-on')]",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": True
-	# },
-	# "Nikkei Asia - Business/Retail": {
-	# 	"country": "Asia",
-	# 	"language": "English",
-	# 	"landing_urls": nikkei_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@data-trackable, "headline")]/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//time[contains(@class, 'timestamp__time')]",
-	# 	"article_url_prefix": "https://asia.nikkei.com/",
-	# 	"fashionb2b": False
-	# },
+	"Business of Fashion": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": ['https://www.businessoffashion.com/articles'],
+		"landing_characteristics": '//a[contains(@tracker, "Article")]/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1[contains(@class, 'article-title')]",
+		"published_date_characteristics": "//div[contains(@class, 'text-uppercase sans-serif small-font horizontal-borders margin-vertical-xs-3')]",
+		"article_url_prefix": "https://www.businessoffashion.com/",
+		"fashionb2b": True
+	},
+	"Just Style": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": juststyle_url_list_creator(),
+		"landing_characteristics": '//p[contains(@class, "linktitle")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1[contains(@class, 'articleTitle')]",
+		"published_date_characteristics": "//p[contains(@class, 'date')]",
+		"article_url_prefix": "https://www.just-style.com",
+		"fashionb2b": True
+	},
+	"Fibre 2 Fashion - All News": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": fibrefashion_allnews_url_list_creator(),
+		"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
+		"article_characteristics": "//span[contains(@class, 'news-details-txt')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'news-date')]",
+		"article_url_prefix": "",
+		"fashionb2b": True
+	},
+	"Fibre 2 Fashion - Articles": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": fibrefashion_articles_url_list_creator(),
+		"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
+		"article_characteristics": "//div[contains(@class, 'article-text')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'published-on')]",
+		"article_url_prefix": "",
+		"fashionb2b": True
+	},
+	"Nikkei Asia - Business/Retail": {
+		"country": "Asia",
+		"language": "English",
+		"landing_urls": nikkei_url_list_creator(),
+		"landing_characteristics": '//a[contains(@data-trackable, "headline")]/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//time[contains(@class, 'timestamp__time')]",
+		"article_url_prefix": "https://asia.nikkei.com/",
+		"fashionb2b": False
+	},
 	# "VN Express": {
 	# 	"country": "Vietnam",
 	# 	"language": "Vietnamese",
