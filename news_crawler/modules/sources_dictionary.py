@@ -77,17 +77,17 @@ sources_dictionary = {
 	# 	"fashionb2b": False,
 	# 	"article_url_prefix": "https://uk.reuters.com"
 	# },
-	"Womans Wear Daily - Business": {
-		"country": "Global",
-		"language": "English",
-		"landing_urls": wwd_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "archive__post")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//div[contains(@id, 'author-container')]",
-		"fashionb2b": True,
-		"article_url_prefix": ""
-	},
+	# "Womans Wear Daily - Business": {
+	# 	"country": "Global",
+	# 	"language": "English",
+	# 	"landing_urls": wwd_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "archive__post")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//div[contains(@id, 'author-container')]",
+	# 	"fashionb2b": True,
+	# 	"article_url_prefix": ""
+	# },
 	# "Mark Up - News": {
 	# 	"country": "Italy",
 	# 	"language": "Italian",
@@ -132,28 +132,28 @@ sources_dictionary = {
 	# 	"article_url_prefix": "",
 	# 	"fashionb2b": True
 	# },
-	"Dansk Mode & Textil": {
-		"country": "Denmark",
-		"language": "Danish",
-		"landing_urls": dansk_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "column-block")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'article__detail')]",
-		"article_url_prefix": "https://www.dmogt.dk",
-		"fashionb2b": True
-	},
-	# "Modaes": {
-	# 	"country": "Spain",
-	# 	"language": "Spanish",
-	# 	"landing_urls": modaes_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
+	# "Dansk Mode & Textil": {
+	# 	"country": "Denmark",
+	# 	"language": "Danish",
+	# 	"landing_urls": dansk_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "column-block")]//a/@href',
 	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1[contains(@class, 'title')]",
-	# 	"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
-	# 	"article_url_prefix": "https://www.modaes.es/",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'article__detail')]",
+	# 	"article_url_prefix": "https://www.dmogt.dk",
 	# 	"fashionb2b": True
 	# },
+	"Modaes": {
+		"country": "Spain",
+		"language": "Spanish",
+		"landing_urls": modaes_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "title")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1[contains(@class, 'title')]",
+		"published_date_characteristics": "//div[contains(@class, 'news_block_title')]",
+		"article_url_prefix": "https://www.modaes.es/",
+		"fashionb2b": True
+	},
 	# "Fashion Magazine Italy - Business": {
 	# 	"country": "Italy",
 	# 	"language": "Italian",
