@@ -473,39 +473,39 @@ sources_dictionary = {
 	# 	"article_url_prefix": "",
 	# 	"fashionb2b": True
 	# },
-	"Fashion United Business - United Kingdom": {
-		"country": "United Kingdom",
-		"language": "English",
-		"landing_urls": fu_biz_uk_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.uk",
-		"fashionb2b": True
-	},
-	"Fashion United Fashion - United Kingdom": {
-		"country": "United Kingdom",
-		"language": "English",
-		"landing_urls": fu_fashion_uk_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.uk",
-		"fashionb2b": True
-	},
-	"Fashion United Retail - United Kingdom": {
-		"country": "United Kingdom",
-		"language": "English",
-		"landing_urls": fu_retail_uk_url_list_creator(),
-		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "https://fashionunited.uk",
-		"fashionb2b": True
-	},
+	# "Fashion United Business - United Kingdom": {
+	# 	"country": "United Kingdom",
+	# 	"language": "English",
+	# 	"landing_urls": fu_biz_uk_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.uk",
+	# 	"fashionb2b": True
+	# },
+	# "Fashion United Fashion - United Kingdom": {
+	# 	"country": "United Kingdom",
+	# 	"language": "English",
+	# 	"landing_urls": fu_fashion_uk_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.uk",
+	# 	"fashionb2b": True
+	# },
+	# "Fashion United Retail - United Kingdom": {
+	# 	"country": "United Kingdom",
+	# 	"language": "English",
+	# 	"landing_urls": fu_retail_uk_url_list_creator(),
+	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "https://fashionunited.uk",
+	# 	"fashionb2b": True
+	# },
 	# "Fashion United Business - Germany": {
 	# 	"country": "Germany",
 	# 	"language": "German",
@@ -550,61 +550,61 @@ sources_dictionary = {
 	# 	"fashionb2b": True,
 	# 	"article_url_prefix": ""
 	# },
-	# "Dialog Textil - Fashion": {
-	# 	"country": "Romania",
-	# 	"language": "Romanian",
-	# 	"landing_urls": dtxtrm_fashion_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//a[contains(@class, 'post-date')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
-	# "Dialog Textil - News": {
-	# 	"country": "Romania",
-	# 	"language": "Romanian",
-	# 	"landing_urls": dtxtrm_news_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//a[contains(@class, 'post-date')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
-	# "Retail Asia - Fashion": {
-	# 	"country": "Asia",
-	# 	"language": "English",
-	# 	"landing_urls": ['https://retailasia.net/fashion'],
-	# 	"landing_characteristics": '//div[contains(@class, "views-row")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'article-published')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": "https://retailasia.net/"
-	# },
-	# "Fashion Network US - Business News": {
-	# 	"country": "United States",
-	# 	"language": "English",
-	# 	"landing_urls": fn_us_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
-	# "Fashion Network UK - Business News": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": fn_uk_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# }
+	"Dialog Textil - Fashion": {
+		"country": "Romania",
+		"language": "Romanian",
+		"landing_urls": dtxtrm_fashion_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//a[contains(@class, 'post-date')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
+	"Dialog Textil - News": {
+		"country": "Romania",
+		"language": "Romanian",
+		"landing_urls": dtxtrm_news_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//a[contains(@class, 'post-date')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
+	"Retail Asia - Fashion": {
+		"country": "Asia",
+		"language": "English",
+		"landing_urls": ['https://retailasia.net/fashion'],
+		"landing_characteristics": '//div[contains(@class, "views-row")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'article-published')]",
+		"fashionb2b": True,
+		"article_url_prefix": "https://retailasia.net/"
+	},
+	"Fashion Network US - Business News": {
+		"country": "United States",
+		"language": "English",
+		"landing_urls": fn_us_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
+	"Fashion Network UK - Business News": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": fn_uk_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	}
 	
 
 
