@@ -286,39 +286,39 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.journaldutextile.com/",
 	# 	"fashionb2b": True
 	# },
-	"Textil Wirtschaft - News": {
-		"country": "Germany",
-		"language": "German",
-		"landing_urls": txtwr_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.textilwirtschaft.de",
-		"fashionb2b": True
-	},
-	"Textil Wirtschaft - Business": {
-		"country": "Germany",
-		"language": "German",
-		"landing_urls": txtwr_biz_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.textilwirtschaft.de",
-		"fashionb2b": True
-	},
-	"Textil Wirtschaft - Fashion": {
-		"country": "Germany",
-		"language": "German",
-		"landing_urls": txtwr_fashion_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.textilwirtschaft.de",
-		"fashionb2b": True
-	},
+	# "Textil Wirtschaft - News": {
+	# 	"country": "Germany",
+	# 	"language": "German",
+	# 	"landing_urls": txtwr_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
+	# 	"fashionb2b": True
+	# },
+	# "Textil Wirtschaft - Business": {
+	# 	"country": "Germany",
+	# 	"language": "German",
+	# 	"landing_urls": txtwr_biz_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
+	# 	"fashionb2b": True
+	# },
+	# "Textil Wirtschaft - Fashion": {
+	# 	"country": "Germany",
+	# 	"language": "German",
+	# 	"landing_urls": txtwr_fashion_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
+	# 	"fashionb2b": True
+	# },
 	# "Le Nouvel Economiste - News": {
 	# 	"country": "France",
 	# 	"language": "French",
@@ -473,39 +473,39 @@ sources_dictionary = {
 	# 	"article_url_prefix": "",
 	# 	"fashionb2b": True
 	# },
-	# "Fashion United Business - United Kingdom": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": fu_biz_uk_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.uk",
-	# 	"fashionb2b": True
-	# },
-	# "Fashion United Fashion - United Kingdom": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": fu_fashion_uk_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.uk",
-	# 	"fashionb2b": True
-	# },
-	# "Fashion United Retail - United Kingdom": {
-	# 	"country": "United Kingdom",
-	# 	"language": "English",
-	# 	"landing_urls": fu_retail_uk_url_list_creator(),
-	# 	"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "https://fashionunited.uk",
-	# 	"fashionb2b": True
-	# },
+	"Fashion United Business - United Kingdom": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": fu_biz_uk_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "https://fashionunited.uk",
+		"fashionb2b": True
+	},
+	"Fashion United Fashion - United Kingdom": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": fu_fashion_uk_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "https://fashionunited.uk",
+		"fashionb2b": True
+	},
+	"Fashion United Retail - United Kingdom": {
+		"country": "United Kingdom",
+		"language": "English",
+		"landing_urls": fu_retail_uk_url_list_creator(),
+		"landing_characteristics": '//div[contains(@class, "item")]//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//div[contains(@class, 'page-header')]//h1",
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "https://fashionunited.uk",
+		"fashionb2b": True
+	},
 	# "Fashion United Business - Germany": {
 	# 	"country": "Germany",
 	# 	"language": "German",
