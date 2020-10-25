@@ -187,28 +187,28 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.just-style.com",
 	# 	"fashionb2b": True
 	# },
-	# "Fibre 2 Fashion - All News": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": fibrefashion_allnews_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
-	# 	"article_characteristics": "//span[contains(@class, 'news-details-txt')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'news-date')]",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": True
-	# },
-	# "Fibre 2 Fashion - Articles": {
-	# 	"country": "Global",
-	# 	"language": "English",
-	# 	"landing_urls": fibrefashion_articles_url_list_creator(),
-	# 	"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
-	# 	"article_characteristics": "//div[contains(@class, 'article-text')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//div[contains(@class, 'published-on')]",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": True
-	# },
+	"Fibre 2 Fashion - All News": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": fibrefashion_allnews_url_list_creator(),
+		"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
+		"article_characteristics": "//span[contains(@class, 'news-details-txt')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'news-date')]",
+		"article_url_prefix": "",
+		"fashionb2b": True
+	},
+	"Fibre 2 Fashion - Articles": {
+		"country": "Global",
+		"language": "English",
+		"landing_urls": fibrefashion_articles_url_list_creator(),
+		"landing_characteristics": '//a[contains(@class, "blue-heading")]/@href',
+		"article_characteristics": "//div[contains(@class, 'article-text')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//div[contains(@class, 'published-on')]",
+		"article_url_prefix": "",
+		"fashionb2b": True
+	},
 	# "Nikkei Asia - Business/Retail": {
 	# 	"country": "Asia",
 	# 	"language": "English",
@@ -297,28 +297,28 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
 	# 	"fashionb2b": True
 	# },
-	"Textil Wirtschaft - Business": {
-		"country": "Germany",
-		"language": "German",
-		"landing_urls": txtwr_biz_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.textilwirtschaft.de",
-		"fashionb2b": True
-	},
-	"Textil Wirtschaft - Fashion": {
-		"country": "Germany",
-		"language": "German",
-		"landing_urls": txtwr_fashion_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.textilwirtschaft.de",
-		"fashionb2b": True
-	},
+	# "Textil Wirtschaft - Business": {
+	# 	"country": "Germany",
+	# 	"language": "German",
+	# 	"landing_urls": txtwr_biz_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
+	# 	"fashionb2b": True
+	# },
+	# "Textil Wirtschaft - Fashion": {
+	# 	"country": "Germany",
+	# 	"language": "German",
+	# 	"landing_urls": txtwr_fashion_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
+	# 	"fashionb2b": True
+	# },
 	# "Le Nouvel Economiste - News": {
 	# 	"country": "France",
 	# 	"language": "French",
