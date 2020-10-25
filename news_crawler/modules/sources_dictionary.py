@@ -154,17 +154,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.modaes.es/",
 	# 	"fashionb2b": True
 	# },
-	"Fashion Magazine Italy - Business": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": fmitaly_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-		"article_url_prefix": "https://www.fashionmagazine.it",
-		"fashionb2b": True
-	},
+	# "Fashion Magazine Italy - Business": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": fmitaly_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+	# 	"article_url_prefix": "https://www.fashionmagazine.it",
+	# 	"fashionb2b": True
+	# },
 	# "Business of Fashion": {
 	# 	"country": "United Kingdom",
 	# 	"language": "English",
@@ -297,28 +297,28 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
 	# 	"fashionb2b": True
 	# },
-	# "Textil Wirtschaft - Business": {
-	# 	"country": "Germany",
-	# 	"language": "German",
-	# 	"landing_urls": txtwr_biz_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
-	# 	"fashionb2b": True
-	# },
-	# "Textil Wirtschaft - Fashion": {
-	# 	"country": "Germany",
-	# 	"language": "German",
-	# 	"landing_urls": txtwr_fashion_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//div[contains(@class, 'PageArticle')]",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
-	# 	"fashionb2b": True
-	# },
+	"Textil Wirtschaft - Business": {
+		"country": "Germany",
+		"language": "German",
+		"landing_urls": txtwr_biz_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+		"article_url_prefix": "https://www.textilwirtschaft.de",
+		"fashionb2b": True
+	},
+	"Textil Wirtschaft - Fashion": {
+		"country": "Germany",
+		"language": "German",
+		"landing_urls": txtwr_fashion_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//div[contains(@class, 'PageArticle')]",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+		"article_url_prefix": "https://www.textilwirtschaft.de",
+		"fashionb2b": True
+	},
 	# "Le Nouvel Economiste - News": {
 	# 	"country": "France",
 	# 	"language": "French",
