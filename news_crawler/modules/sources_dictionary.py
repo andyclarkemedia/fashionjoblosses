@@ -319,61 +319,61 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
 	# 	"fashionb2b": True
 	# },
-	# "Le Nouvel Economiste - News": {
-	# 	"country": "France",
-	# 	"language": "French",
-	# 	"landing_urls": lne_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
+	"Le Nouvel Economiste - News": {
+		"country": "France",
+		"language": "French",
+		"landing_urls": lne_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//time",
+		"article_url_prefix": "",
+		"fashionb2b": False
+	},
+	# "Il Sole 24 - Fashion Business": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/storie-impresa/1', 'https://www.ilsole24ore.com/archivi/moda/storie-impresa/2', 'https://www.ilsole24ore.com/sez/moda/storie-impresa'],
+	# 	"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
 	# 	"article_characteristics": "//p",
 	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//time",
-	# 	"article_url_prefix": "",
-	# 	"fashionb2b": False
+	# 	"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
+	# 	"article_url_prefix": "https://www.ilsole24ore.com/",
+	# 	"fashionb2b": True
 	# },
-	"Il Sole 24 - Fashion Business": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/storie-impresa/1', 'https://www.ilsole24ore.com/archivi/moda/storie-impresa/2', 'https://www.ilsole24ore.com/sez/moda/storie-impresa'],
-		"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
-		"article_url_prefix": "https://www.ilsole24ore.com/",
-		"fashionb2b": True
-	},
-	"Il Sole 24 - Fashion Economics": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/economia-e-finanza/1', 'https://www.ilsole24ore.com/archivi/moda/economia-e-finanza/2', 'https://www.ilsole24ore.com/sez/moda/economia-e-finanza'],
-		"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
-		"article_url_prefix": "https://www.ilsole24ore.com/",
-		"fashionb2b": True
-	},
-	"Il Sole 24 - Luxury Fashion News": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": ['https://www.ilsole24ore.com/sez/moda/luxury'],
-		"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
-		"article_url_prefix": "https://www.ilsole24ore.com/",
-		"fashionb2b": True
-	},
-	"Il Sole 24 - Fashion Archives": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/1', 'https://www.ilsole24ore.com/archivi/moda/2', 'https://www.ilsole24ore.com/archivi/moda/3', 'https://www.ilsole24ore.com/archivi/moda/4', 'https://www.ilsole24ore.com/archivi/moda/5', 'https://www.ilsole24ore.com/archivi/moda/6', 'https://www.ilsole24ore.com/archivi/moda/7', 'https://www.ilsole24ore.com/archivi/moda/8'],
-		"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
-		"article_url_prefix": "https://www.ilsole24ore.com/",
-		"fashionb2b": True
-	},
+	# "Il Sole 24 - Fashion Economics": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/economia-e-finanza/1', 'https://www.ilsole24ore.com/archivi/moda/economia-e-finanza/2', 'https://www.ilsole24ore.com/sez/moda/economia-e-finanza'],
+	# 	"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
+	# 	"article_url_prefix": "https://www.ilsole24ore.com/",
+	# 	"fashionb2b": True
+	# },
+	# "Il Sole 24 - Luxury Fashion News": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": ['https://www.ilsole24ore.com/sez/moda/luxury'],
+	# 	"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
+	# 	"article_url_prefix": "https://www.ilsole24ore.com/",
+	# 	"fashionb2b": True
+	# },
+	# "Il Sole 24 - Fashion Archives": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": ['https://www.ilsole24ore.com/archivi/moda/1', 'https://www.ilsole24ore.com/archivi/moda/2', 'https://www.ilsole24ore.com/archivi/moda/3', 'https://www.ilsole24ore.com/archivi/moda/4', 'https://www.ilsole24ore.com/archivi/moda/5', 'https://www.ilsole24ore.com/archivi/moda/6', 'https://www.ilsole24ore.com/archivi/moda/7', 'https://www.ilsole24ore.com/archivi/moda/8'],
+	# 	"landing_characteristics": '//li[contains(@class, "list-lined-item")]//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//p[contains(@class, 'ainfo-block')]",
+	# 	"article_url_prefix": "https://www.ilsole24ore.com/",
+	# 	"fashionb2b": True
+	# },
 	# "Fashion United Business - Spain": {
 	# 	"country": "Spain",
 	# 	"language": "Spanish",
@@ -539,17 +539,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://fashionunited.de",
 	# 	"fashionb2b": True
 	# },
-	# "Fashion Network Italy - Business News": {
-	# 	"country": "Italy",
-	# 	"language": "Italian",
-	# 	"landing_urls": fn_italy_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-	# 	"fashionb2b": True,
-	# 	"article_url_prefix": ""
-	# },
+	"Fashion Network Italy - Business News": {
+		"country": "Italy",
+		"language": "Italian",
+		"landing_urls": fn_italy_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
+		"fashionb2b": True,
+		"article_url_prefix": ""
+	},
 	# "Dialog Textil - Fashion": {
 	# 	"country": "Romania",
 	# 	"language": "Romanian",
