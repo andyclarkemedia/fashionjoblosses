@@ -105,7 +105,7 @@ class JobLossMention(models.Model):
 class VisitedURL(models.Model):
 
 	# Declare the fields 
-	url = models.URLField(max_length=300)
+	url = models.URLField(max_length=1500)
 	date_visited = models.DateField()
 
 	# Declare how the entry should appear on display
