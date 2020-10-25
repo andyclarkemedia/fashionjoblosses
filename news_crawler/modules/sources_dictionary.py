@@ -154,17 +154,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.modaes.es/",
 	# 	"fashionb2b": True
 	# },
-	# "Fashion Magazine Italy - Business": {
-	# 	"country": "Italy",
-	# 	"language": "Italian",
-	# 	"landing_urls": fmitaly_url_list_creator(),
-	# 	"landing_characteristics": '//article//a/@href',
-	# 	"article_characteristics": "//p",
-	# 	"headline_characteristics": "//h1",
-	# 	"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
-	# 	"article_url_prefix": "https://www.fashionmagazine.it",
-	# 	"fashionb2b": True
-	# },
+	"Fashion Magazine Italy - Business": {
+		"country": "Italy",
+		"language": "Italian",
+		"landing_urls": fmitaly_url_list_creator(),
+		"landing_characteristics": '//article//a/@href',
+		"article_characteristics": "//p",
+		"headline_characteristics": "//h1",
+		"published_date_characteristics": "//span[contains(@class, 'PublishDate_date')]",
+		"article_url_prefix": "https://www.fashionmagazine.it",
+		"fashionb2b": True
+	},
 	# "Business of Fashion": {
 	# 	"country": "United Kingdom",
 	# 	"language": "English",
@@ -319,17 +319,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://www.textilwirtschaft.de",
 	# 	"fashionb2b": True
 	# },
-	"Le Nouvel Economiste - News": {
-		"country": "France",
-		"language": "French",
-		"landing_urls": lne_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//time",
-		"article_url_prefix": "",
-		"fashionb2b": False
-	},
+	# "Le Nouvel Economiste - News": {
+	# 	"country": "France",
+	# 	"language": "French",
+	# 	"landing_urls": lne_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//time",
+	# 	"article_url_prefix": "",
+	# 	"fashionb2b": False
+	# },
 	# "Il Sole 24 - Fashion Business": {
 	# 	"country": "Italy",
 	# 	"language": "Italian",
@@ -539,17 +539,17 @@ sources_dictionary = {
 	# 	"article_url_prefix": "https://fashionunited.de",
 	# 	"fashionb2b": True
 	# },
-	"Fashion Network Italy - Business News": {
-		"country": "Italy",
-		"language": "Italian",
-		"landing_urls": fn_italy_url_list_creator(),
-		"landing_characteristics": '//article//a/@href',
-		"article_characteristics": "//p",
-		"headline_characteristics": "//h1",
-		"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
-		"fashionb2b": True,
-		"article_url_prefix": ""
-	},
+	# "Fashion Network Italy - Business News": {
+	# 	"country": "Italy",
+	# 	"language": "Italian",
+	# 	"landing_urls": fn_italy_url_list_creator(),
+	# 	"landing_characteristics": '//article//a/@href',
+	# 	"article_characteristics": "//p",
+	# 	"headline_characteristics": "//h1",
+	# 	"published_date_characteristics": "//span[contains(@class, 'time-ago__text')]",
+	# 	"fashionb2b": True,
+	# 	"article_url_prefix": ""
+	# },
 	# "Dialog Textil - Fashion": {
 	# 	"country": "Romania",
 	# 	"language": "Romanian",
