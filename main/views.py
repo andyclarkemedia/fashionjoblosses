@@ -37,7 +37,7 @@ class JobLossMentionListCreate(generics.ListCreateAPIView):
 
 	# Setting the filter options
 	def get_queryset(self):
-		""" Optionally restricts the returned job loss mention by filtering against a `publication_name` query parameter in the URL. """
+		""" Optionally restricts the returned job loss mention by filtering against a `date_accessed` query parameter in the URL. """
 
 		# Initially set the returned objects to be all sentences
 		queryset = JobLossMention.objects.all()
