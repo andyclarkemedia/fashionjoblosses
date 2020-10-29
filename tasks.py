@@ -29,7 +29,7 @@ from main.models import VisitedURL
 # CHECK DAY OF THE WEEK (MONDAY = 0)
 # =======================================
 
-if datetime.datetime.today().weekday():
+if datetime.datetime.today().weekday() == 0:
 
 	# =============
 	#  TASK 1 - crawl
